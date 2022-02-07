@@ -1,0 +1,119 @@
+.site-navigation {
+  margin-top: 10px;
+  height: 130px;
+  width: 100%;
+  // background-color: rgb(235, 27, 27);
+  display: flex;
+  justify-content: space-around;
+  color: $text-color;
+
+  ul {
+    height: 10%;
+    margin-block-start: 0;
+    margin-inline-end: 0;
+    margin-inline-start: 0;
+    display: flex;
+    list-style-type: none;
+    margin-right: 10px;
+    margin-top: none;
+    // border: 2px solid rgb(10, 4, 4);
+    border-radius: 10px;
+    // background-color: rgb(255, 0, 119);
+    padding: 20px;
+    // background-color: #091921;
+    // box-shadow: 7px 7px 11px #061217, -7px -7px 11px #0c202b;
+    
+  }
+  ul li{
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    border-bottom: 2px solid black;
+    margin:0 15px;
+    
+  }
+  li.active::after{
+  position: absolute;
+  content: "";
+  height: 3px;
+  width: 110px;
+  background-color: rgb(80, 76, 76);
+  left: 0;
+  bottom: 0px;
+  margin-left: 0px;
+  
+  }
+  .menu-content-container{
+    margin-top: 20px;
+     display: flex;
+     height: 120px;
+     width: 1000px;
+     align-items: center;
+    //  margin-right: 30px;
+    //  background-color: red;
+     .anti-avatar{
+      //  background-color: $background;
+      //  border: 1px solid $border;
+      justify-content:space-around;
+      // margin-right: 10px;
+     
+         
+     }
+
+}
+ 
+
+  a {
+    text-decoration: none;
+    padding: 0 20px 0 20px;
+    // margin: 20px auto;
+    font-size: 20px;
+    color: $text-color;
+  
+}   
+
+    &:hover {
+      color: $text-link;
+    }
+  
+      .containerhome{
+     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+ 
+}
+.paragraph{
+  margin-left: 58px;
+  margin-top: 40px;
+}
+
+}
+.menuTitle {
+  font-size: 24px;
+  font-weight: 400;
+  // background-color: red;
+  display: flex;
+  // justify-content: space-around;
+  // flex-direction: row;
+  text-align: center;
+  margin-right: 200px;
+  margin-top: 10%;
+  margin-left: 100px;
+  
+}
+.line::after{
+  position:absolute;
+  content: "";
+  height: 10px;
+  width: 310px;
+  background-color: #091921;
+  left:250px;
+  float: center;
+  // align-items: center;
+  // flex-direction: row;
+  // bottom: 0px;
+  margin-left: 0px;
+  transform: rotate(90deg);
+  margin-top:275px;
+  border-radius: 20px;
+}
